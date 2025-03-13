@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <div class="w-full h-screen bg-zinc-900 text-white p-10">
+        <a class="text-blue-500" href="/read">Read User</a>
+        <form class="mt-10" action="/create" method="post">
+
+            <h1 class="text-3xl mb-3 tracking-tighter">Create User</h1>
+            <input class="px-5 py-5 border-2 border-grey-800 rounded-lg bg-transparent" type="text" name="name"  placeholder="name">
+            <input class="px-5 py-5 border-2 border-grey-800 rounded-lg bg-transparent" type="text" name="email" placeholder="email">
+            <input class="px-5 py-5 border-2 border-grey-800 rounded-lg bg-transparent" type="text" name="image" placeholder="image-url">
+            <input class="p-3 m-2 bg-blue-500 rounded-lg" type="submit" value="Create User">
+        </form>
+    </div>
+</body>
+</html>
